@@ -16,4 +16,5 @@ spec:
   values:
     ollama:
       models:
-        - saikatkumardey/tinyllama:latest
+        #- saikatkumardey/tinyllama:latest
+        - tinydolphin
