@@ -3,8 +3,8 @@ kind: HelmRelease
 metadata:
   name: ollama
   namespace: ollama
-  # annotations:
-  #   kustomize.toolkit.fluxcd.io/reconcile: disabled
+  #annotations:
+  #  kustomize.toolkit.fluxcd.io/reconcile: disabled
 spec:
   interval: 5m
   chart:
@@ -20,4 +20,5 @@ spec:
       models:
         #- saikatkumardey/tinyllama:latest
         #- tinydolphin
-        - tinyllama
+        #- tinyllama
+        - deepseek-coder
