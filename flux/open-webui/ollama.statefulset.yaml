@@ -31,6 +31,11 @@ spec:
         - name: ollama-volume
           mountPath: /root/.ollama
         tty: true
+        env:
+        - name: OLLAMA_NUM_PARALLEL
+          value: 3
+        - name: OLLAMA_MAX_LOADED_MODELS
+          value: 2
   volumeClaimTemplates:
   - metadata:
       name: ollama-volume
