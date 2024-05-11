@@ -25,6 +25,7 @@ spec:
       annotations: {}
         # kubernetes.io/ingress.class: nginx
         # kubernetes.io/tls-acme: "true"
+        external-dns.alpha.kubernetes.io/hostname: podinfo.home
       hosts:
         - host: podinfo.home
           paths:
