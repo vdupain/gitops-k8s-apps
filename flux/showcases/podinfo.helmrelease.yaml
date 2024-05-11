@@ -27,3 +27,6 @@ spec:
         # kubernetes.io/tls-acme: "true"
       hosts:
         - host: podinfo.home
+          paths:
+            - path: /
+              pathType: ImplementationSpecific        
