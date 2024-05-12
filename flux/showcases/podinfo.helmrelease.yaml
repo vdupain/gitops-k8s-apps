@@ -22,7 +22,7 @@ spec:
     ingress:
       enabled: true
       hosts:
-        - host: test2.home
+        - host: podinfo.home
           paths:
             - path: /
               pathType: ImplementationSpecific
