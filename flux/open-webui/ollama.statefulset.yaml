@@ -16,11 +16,11 @@ spec:
     spec:
       runtimeClassName: nvidia
       tolerations:
-      - key: nvidia.com/gpu
+      - key: gpu
         operator: "Exists"
         effect: "NoSchedule"
       nodeSelector:
-        nvidia.com/gpu: "1"
+        gpu: nvidia
       containers:
       - name: ollama
         image: ollama/ollama:latest
