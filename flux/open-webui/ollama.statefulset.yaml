@@ -3,8 +3,6 @@ kind: StatefulSet
 metadata:
   name: ollama
   namespace: open-webui
-  #annotations:
-  #  kustomize.toolkit.fluxcd.io/reconcile: disabled
 spec:
   serviceName: "ollama"
   replicas: 1
@@ -16,15 +14,6 @@ spec:
       labels:
         app: ollama
     spec:
-      affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-            - matchExpressions:
-              - key: gpu
-                operator: In
-                values:
-                - nvidia
       containers:
       - name: ollama
         image: ollama/ollama:latest
