@@ -20,7 +20,7 @@ spec:
         operator: "Exists"
         effect: "NoSchedule"
       nodeSelector:
-        nvidia.com/gpu=: "1"
+        nvidia.com/gpu: "1"
       containers:
       - name: ollama
         image: ollama/ollama:latest
