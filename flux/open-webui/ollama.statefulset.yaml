@@ -15,6 +15,12 @@ spec:
         app: ollama
     spec:
       runtimeClassName: nvidia
+      tolerations:
+      - key: nvidia.com/gpu
+        operator: "Exists"
+        effect: "NoSchedule"
+      nodeSelector:
+        nvidia.com/gpu=: "1"
       containers:
       - name: ollama
         image: ollama/ollama:latest
