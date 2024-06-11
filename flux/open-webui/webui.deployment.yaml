@@ -28,6 +28,8 @@ spec:
         env:
         - name: OLLAMA_BASE_URL
           value: "http://ollama-service.open-webui.svc.cluster.local:11434"
+        - name: GLOBAL_LOG_LEVEL
+          value: "DEBUG"
         tty: true
         volumeMounts:
         - name: webui-volume
