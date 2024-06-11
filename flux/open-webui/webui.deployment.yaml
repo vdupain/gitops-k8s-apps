@@ -22,9 +22,9 @@ spec:
           requests:
             cpu: "500m"
             memory: "500Mi"
-          limits:
-            cpu: "1000m"
-            memory: "1Gi"
+          # limits:
+          #   cpu: "1000m"
+          #   memory: "1Gi"
         env:
         - name: OLLAMA_BASE_URL
           value: "http://ollama-service.open-webui.svc.cluster.local:11434"
