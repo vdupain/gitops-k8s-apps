@@ -19,7 +19,7 @@ spec:
     ingress:
       enabled: true
       hosts:
-        - host: podinfo.k8s.example.org
+        - host: podinfo.k8s
           paths:
             - path: /
               pathType: Prefix
