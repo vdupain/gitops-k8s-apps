@@ -8,12 +8,14 @@ spec:
   chart:
     spec:
       chart: podinfo
-      version: 6.6.2
+      version: 6.7.0
       sourceRef:
         kind: HelmRepository
         name: podinfo
         namespace: flux-system
-      interval: 1m
+  interval: 15m
+  timeout: 5m
+  releaseName: podinfo
   
   values:
     ingress:
