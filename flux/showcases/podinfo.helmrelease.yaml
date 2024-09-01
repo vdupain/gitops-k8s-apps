@@ -4,7 +4,6 @@ metadata:
   name: podinfo
   namespace: showcases
 spec:
-  interval: 5m
   chart:
     spec:
       chart: podinfo
