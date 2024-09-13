@@ -19,9 +19,6 @@ spec:
   values:
     ingress:
       enabled: true
-#      annotations:
-#        external-dns.alpha.kubernetes.io/hostname: podinfo.k8s
-#        kubernetes.io/ingress.class: "nginx"
       hosts:
         - host: podinfo.k8s
           paths:
